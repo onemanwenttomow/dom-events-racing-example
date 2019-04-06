@@ -26,20 +26,16 @@
     text-transform: uppercase;
 }
 
-#boost {
-    font-size: 50px;
-}
+#boost { font-size: 50px; }
 
-
-.sky {
-    min-height: 15vh;
-}
+.sky { min-height: 15vh; }
 
 .track {
     min-height: 20vh;
     position: relative;
     background-color: #323232;
     border-bottom: dashed white 3px;
+    border-right: dashed white 20px;
 }
 
 .racer {

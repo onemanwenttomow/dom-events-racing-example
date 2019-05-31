@@ -1,12 +1,5 @@
 var board = document.getElementById('board');
 var racers = document.getElementsByClassName('racer');
-
-// Code to use to keep things more obvious.
-// var racingCarLeft = 0;
-// var motorBikeLeft = 0;
-// var policeCarLeft = 0;
-// var tractorLeft = 0;
-
 var racersLeft = [ 0, 0, 0, 0 ];
 
 function getRandomNumber(num) {
@@ -18,24 +11,13 @@ document.addEventListener("click", function() {
         racersLeft[i] += getRandomNumber(21);
         racers[i].style.left = racersLeft[i] + "px";
     }
-    // racingCarLeft += getRandomNumber(21);
-    // motorBikeLeft += getRandomNumber(21);
-    // policeCarLeft += getRandomNumber(21);
-    // tractorLeft += getRandomNumber(21);
-    // console.log(racingCarLeft);
-    // racers[0].style.left = racingCarLeft + "px";
-    // racers[1].style.left = motorBikeLeft + "px";
-    // racers[2].style.left = policeCarLeft + "px";
-    // racers[3].style.left = tractorLeft + "px";
 });
 
-
-
 document.getElementById('boost-button').addEventListener("click", function(e) {
-    e.stopPropagation();
-    racersLeft[0] += 100;
-    racers[0].style.left = racersLeft[0] + "px";
     console.log("clicked on button!");
+    e.stopPropagation();
+    racersLeft[0] += 20;
+    racers[0].style.left = racersLeft[0] + "px";
 });
 
 document.addEventListener("keydown", function(evt) {

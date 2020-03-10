@@ -44,4 +44,5 @@
     display: inline-block;
     transform: scale(-1, 1);
     transition: left 0.2s ease-in;
+    left: 0;
 }

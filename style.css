@@ -1,22 +1,24 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
     min-height: 100vh;
+    background-color: hsl(201, 100%, 96%);
 }
 
 header {
-    height: 102px;
+    height: 96px;
 }
 
 h1 {
     float: left;
     margin-top: 24px;
     font-size: 48px;
-    color: hsl(210, 24%, 16%);
+    /* color: hsl(210, 24%, 16%); */
+    color: hsl(200, 82%, 24%);
     letter-spacing: -1px;
 }
 
@@ -29,13 +31,13 @@ h1 {
 }
 
 .boost-button {
+    position: relative;
     float: right;
+    font-size: 30px;
     color: hsl(201, 100%, 96%);
     background-color: hsl(200, 59%, 43%);
     padding: 8px 16px 8px 48px;
-    font-size: 30px;
     margin: 24px 0;
-    position: relative;
     border-radius: 8px;
 }
 
@@ -50,8 +52,8 @@ h1 {
     min-height: 128px;
     position: relative;
     background-color: hsl(210, 24%, 16%);
-    border-bottom: dashed white 4px;
-    border-right: dashed white 8px;
+    border-bottom: dashed hsl(201, 100%, 96%) 4px;
+    border-right: dashed hsl(201, 100%, 96%) 8px;
 }
 
 .racer {
@@ -69,7 +71,6 @@ h1 {
     -webkit-user-select: none; /* Chrome/Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
-
     /* Rules below not implemented in browsers yet */
     -o-user-select: none;
     user-select: none;

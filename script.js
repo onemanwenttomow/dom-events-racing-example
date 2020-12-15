@@ -6,7 +6,7 @@ function getRandomNumber(num) {
     return Math.floor(Math.random() * num);
 }
 
-document.addEventListener("click", function() {
+board.addEventListener("click", function() {
     for (var i = 0; i < racersLeft.length; i++) {
         racersLeft[i] += getRandomNumber(21);
         racers[i].style.left = racersLeft[i] + "px";

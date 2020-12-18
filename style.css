@@ -24,6 +24,7 @@ h1 {
 
 .board {
     position: absolute;
+    overflow: hidden;
     width: 768px;
     top: 50%;
     left: 50%;
